@@ -19,9 +19,9 @@
 import UIKit
 import SnapKit
 
-open class FloatingNotificationBanner: GrowingNotificationBanner {
+@objc open class FloatingNotificationBanner: GrowingNotificationBanner {
     
-    public init(
+    @objc public init(
         title: String? = nil,
         subtitle: String? = nil,
         titleFont: UIFont? = nil,
@@ -89,7 +89,7 @@ open class FloatingNotificationBanner: GrowingNotificationBanner {
     /**
      Convenience function to display banner with non .zero default edge insets
      */
-    public func show(
+    @objc public func show(
         queuePosition: QueuePosition = .back,
         bannerPosition: BannerPosition = .top,
         queue: NotificationBannerQueue = NotificationBannerQueue.default,
